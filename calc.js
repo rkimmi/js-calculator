@@ -13,7 +13,12 @@ function btnEquals() {
   var fldInput = document.getElementById("fld_input");
   var valInput = fldInput.value;
   var newInput = '';
-    newInput = eval(valInput);
+  try {
+  newInput = eval(valInput);
+}
+  catch(e) {
+    newInput = "Error!"
+}
   fldInput.value = newInput;
 
 }
