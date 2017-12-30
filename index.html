@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylecalc.css">
+    <script src="calc.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  </head>
+
+ <body>
+<!--need div class for buttons-->
+<!--need onclick functions-->
+<div class="grid">
+  <div class="row">
+    <div class="col-1">
+<input id="fld_input"type='text'>
+</div>
+</div>
+  <div class="row">
+  <button id="btn_CE" onClick="btnCE();">CE</button>
+        <button onclick = "btnClick('/');">/</button>
+</div>
+<div class="row">
+  <button onCLick="btnClick('7');">7</button>
+    <button onCLick="btnClick('8');">8</button>
+      <button onCLick="btnClick('9');">9</button>
+        <button onCLick="btnClick('*');">x</button>
+</div>
+    <div class="row">
+  <button onCLick="btnClick('4');">4</button>
+    <button onCLick="btnClick('5');">5</button>
+      <button onCLick="btnClick('6');">6</button>
+        <button onCLick="btnClick('-');">-</button>
+</div>
+<div class="row">
+  <button onCLick="btnClick('1');">1</button>
+    <button onCLick="btnClick('2');">2</button>
+      <button onCLick="btnClick('3');">3</button>
+        <button onCLick="btnClick('+');">+</button>
+</div>
+  <div class="row">
+    <div class="col-1">
+  <button onCLick="btnClick('0');">0</button>
+    <button onCLick="btnClick('.');">.</button>
+      <button id="id_equals" onclick="btnEquals();">=</button>
+</div>
+</div>
+
+
+ </body>
+</html>
